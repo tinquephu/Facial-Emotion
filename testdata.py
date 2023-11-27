@@ -10,7 +10,7 @@ labels_dict={0:'Angry',1:'Disgust', 2:'Fear', 3:'Happy',4:'Neutral',5:'Sad',6:'S
 
 # len(number_of_image), image_height, image_width, channel
 
-frame=cv2.imread("happy-boy.jpg")
+frame=cv2.imread("motdongnguoi.jpg")
 gray=cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 faces= faceDetect.detectMultiScale(gray, 1.3, 3)
 for x,y,w,h in faces:
